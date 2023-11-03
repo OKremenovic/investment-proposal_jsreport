@@ -1,0 +1,34 @@
+{
+    "name": "main",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "Hw2LCSRlu",
+    "chrome": {
+        "printBackground": true,
+        "landscape": false,
+        "width": "29.7cm",
+        "height": "21cm",
+        "waitForNetworkIdle": true
+    },
+    "creationDate": {
+        "$$date": 1698848542876
+    },
+    "modificationDate": {
+        "$$date": 1699017586840
+    },
+    "_id": "syp8GSiC1l3O8XRf",
+    "$entitySet": "templates",
+    "pdfOperations": [
+        {
+            "type": "prepend",
+            "templateShortid": "ftMySgGJh",
+            "enabled": true
+        }
+    ],
+    "data": {
+        "shortid": "xOo8CoQnV"
+    },
+    "localization": {
+        "language": "en"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "jsreport": "^4.1.0",
+        "yarn": "^1.22.19"
+    },
+    "scripts": {
+        "configure": "jsreport configure",
+        "start": "jsreport start"
+    }
+}

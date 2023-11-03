@@ -1,0 +1,87 @@
+<html>
+<head>
+    <!-- Include Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        {{asset "./styles/main.css"}}
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .cover {
+            display: flex;
+            flex-direction: column;
+            background-image: url("{#asset ./images/background-cover.png @encoding=dataURI}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 0%;
+            width: 100%;
+            height: 100%;
+            padding-left: 16mm;
+        }
+
+        .cover_title {
+            font-size: 34pt;
+            color: var(--purple-color);
+            /* font-weight: var(--font-weight-bold); */
+            font-weight: 700;
+            position: relative;
+        }
+
+        .cover_title:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -24px;
+            background-image: url("{#asset ./images/SVGs/evooq-corner.svg @encoding=dataURI}");
+            width: 8mm;
+            height: 8mm;
+        }
+
+        .cover_logo {
+            width: 27mm;
+            height: 27mm;
+            background-image: url("{#asset ./images/logo-evooq.png @encoding=dataURI}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 22mm auto 58mm auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="cover">
+        {{{pdfAddPageItem}}}
+        <div class="cover_logo"></div>
+        <div class='cover_header'>
+            <div class='cover_title'>
+                {{localize "investmentProposal" "./localization"}}
+            </div>
+            <div class='cover_clientinfo'>
+                <div class='labelvaluecontainer'>
+                    <div class='label'>{{localize "client" "./localization"}}</div>
+                    <div class='value'>{{client.individualFullName}}</div>
+                    <div class='label'>{{localize "portfolio" "./localization"}}</div>
+                    <div class='value'>{{portfolio.name}}</div>
+                    <div class='label'>{{localize "proposal" "./localization"}}</div>
+                    <div class='value'>{{proposal.name}}</div>
+                    <div class='label'>{{localize "date" "./localization"}}</div>
+                    <div class='value'>{{proposal.generatedAt}}</div>
+                    <div class='label'>{{localize "yourAdvisor" "./localization"}}</div>
+                    <div class='value'>{{portfolio.advisor.fullName}}</div>
+                </div>
+            </div>
+        </div>
+        {{!-- <div class="cover-footer">
+            <div class="cover-footer-bg"></div>
+            <div class="cover-footer-content">
+                <span class="cover-footer-title-primary">SAMPLE</span>
+                <br />
+                <span class="cover-footer-title-secondary">COVER TEMPLATE</span>
+            </div>
+        </div> --}}
+    </main>
+</body>
+</html>

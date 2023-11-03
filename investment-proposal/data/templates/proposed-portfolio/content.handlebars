@@ -1,0 +1,33 @@
+    <table border="1" class='w-full'>
+        <thead>
+            <tr>
+                <th>{{localize "assets" '../localization'}}</th>
+                <th>{{localize "ISIN" '../localization'}}</th>
+                <th>{{localize "currency" '../localization'}}</th>
+                <th>{{localize "status" '../localization'}}</th>
+                <th class="text-right">{{localize "quantity" '../localization'}}</th>
+                <th class="text-right">
+                    <div>{{localize "price" '../localization'}}</div>
+                    <div class='text-black font-light'>{{proposal.positions.0.assetPriceInPositionCurrency.currency}}</div></th>
+                <th class="text-right">{{localize "marketValue" '../localization'}}</th>
+                <th class="text-right">{{localize "weight" '../localization'}}</th>
+                {{!-- <th>Outside of Universe</th> --}}
+            </tr>
+        </thead>
+        <tbody>
+            {{#each proposal.positions}}
+            <!-- Add your data rows here -->
+            <tr>
+                <td>{{asset.name}}</td>
+                <td>{{asset.isin}}</td>
+                <td>{{asset.currency}}</td>
+                <td><div class='{{getStatusClass status}}'>{{toUpperCase status}}</div></td>
+                <td class="text-right">{{formatNumber quantity 2 false}}</td>
+                <td class="text-right">{{formatNumber assetPriceInPositionCurrency.value 2 false}}</td>
+                <td class="text-right">{{formatNumber marketValue 2 false}}</td>
+                <td class="text-right">{{formatNumber weight 2 true}}</td>
+                {{!-- <td>No</td> --}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>

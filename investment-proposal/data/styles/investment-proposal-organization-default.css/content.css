@@ -1,0 +1,1343 @@
+/***************************************************************************************************
+*
+*	Author: 	Pieric Félisaz, ReportingSoft
+*	Date:		29 April 2020
+*
+*	Investment Proposal BIRT Report Styles
+*
+* 	This file defines css for use in reports of a specific organization (e.g. evooq, client etc) 
+*
+* 	The css is split into two main sections:
+*
+* 	1. STANDARD BIRT STYLES (overrides standard out-of-the-box BIRT styles)
+* 	2. NON-STANDARD BIRT STYLES (defines non-standard BIRT styles)
+*
+* 	Note 1: Definitions of the standard BIRT styles (and how they cascade with each other)  can
+* 	be found in the book "BIRT A Field Guide - 3rd Edition" (Addison Wesley),
+* 	chapter "Formatting with styles" (p172)
+*
+* 	Note 2: The styles in section "NON-STANDARD BIRT STYLES" of this file do not override standard BIRT styles, 
+* 	but they can be used by the generated BIRT report design
+*  
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+* 
+* STANDARD BIRT STYLES
+*
+****************************************************************************************************/
+
+/**************************************
+* GENERAL
+**************************************/
+
+.report {
+    font-family: "Ubuntu Light";
+    font-size: 9pt;
+    line-height: 12pt;
+    color: #222222; /* evooq black */
+    background-color: #FFFFFF; /* white */
+}
+
+.page {
+}
+
+.text {
+	padding-top: 0mm;
+	padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;	
+}
+
+
+.data {
+	padding-top: 0mm;
+	padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;	
+	
+}
+
+.label{
+	padding-top: 0mm;
+	padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;	
+	
+}
+
+/**************************************
+* GRID
+**************************************/
+
+.grid {
+    padding-top: 0mm;
+    padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;		
+}
+
+.grid-row {
+    padding-top: 0mm;
+    padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;		
+}	
+
+.grid-cell{
+    padding-top: 0mm;
+    padding-bottom: 0mm;
+    padding-left: 0mm;
+    padding-right: 0mm;	
+}
+	
+
+/**************************************
+* TABLE
+**************************************/
+
+.table {
+}
+
+.table-detail {
+}
+
+.table-detail-cell {
+}
+
+
+.table-header {
+}
+
+.table-header-cell {
+}
+
+
+.table-footer {
+}
+
+.table-footer-cell {
+}
+
+/* NOTE: This configures predefined BIRT classes table-group-footer-1 to table-group-footer-9 */
+/*
+[class="table-group-footer-"] {
+}
+*/
+
+/* NOTE: This configures predefined BIRT classes table-group-header-1 to table-group-header-9 */
+/*
+[class="table-group-header-"] {
+}
+*/
+
+/*.table-group-footer-1 {
+       background-color: #FFFFCC;
+}*/
+
+
+
+/***************************************************************************************************
+* 
+* NON-STANDARD BIRT STYLES
+*
+****************************************************************************************************/
+
+
+.without-padding {
+    padding-top: 0mm;
+    padding-left: 0mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;		
+}
+
+.green-font-color{
+	color: #5ea343;
+}
+
+.red-font-color{
+	color: #c20e19;
+}
+
+/***************************************************************************************************
+* 
+* Default
+*
+****************************************************************************************************/
+
+.report-default-table-cell{
+    padding-top: 2mm;
+    padding-left: 2mm;
+    padding-bottom: 2mm;
+    padding-right: 2mm;
+    vertical-align: middle;
+}
+
+.report-default-bottom-border-lined-container{
+	border-bottom-color: #919191;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-default-table-notok-icon{
+	width: 3mm;
+	height: 3mm;
+}
+
+.report-default-table-notok-icon-cell{
+	padding-top: 2.5mm;
+    padding-left: 2mm;
+    padding-bottom: 2mm;
+    padding-right: 2mm;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/***************************************************************************************************
+* Organization Cover Page Section
+****************************************************************************************************/
+
+.report-coverpage-organization-logo-image {
+        /* Basic styles */        
+        width: 27mm; /* image width */
+        height: 27mm;
+        /* Additional styles */
+        /* proportional-scale: true;  If true, image height will be automatically proportional to width */
+        /* height: 21mm; */ /* Image height. Note: Not required if proportional-scale is true */
+        
+}
+
+/* Spacer / gap between grid and cover page header */
+.report-coverpage-verticalSpacer{
+	height: 58mm;
+}
+
+.report-coverpage-header-container{
+    padding-top: 0mm;
+    padding-left: 4mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;
+}   
+
+.report-coverpage-header-title-row-container{
+        height: 16mm;
+        vertical-align: middle;
+}
+
+
+.report-coverpage-header-title{
+    /* Basic styles */
+    font-family: "Ubuntu Bold";
+    font-size: 34pt;	
+    font-weight: normal;
+    color: #B70057; /* evooq purple */
+    text-align: left;  
+    padding-top: 2mm;
+    padding-left: 0mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;		
+}
+
+.report-coverpage-header-line-row{
+	height: 6mm;
+}
+
+.report-coverpage-header-label{
+    font-family: "Ubuntu Light";
+    font-size: 14pt;	
+    font-weight: normal;
+    line-height: 18pt;  
+    /* padding-top: 1mm; */
+    padding-top: 0mm;
+    padding-left: 0mm;
+    /* padding-bottom: 1mm; */
+    padding-bottom: 0mm;
+    padding-right: 0mm;	
+}
+
+.report-coverpage-header-label-value{
+    font-family: "Ubuntu Medium";
+    font-size: 14pt;	
+    font-weight: normal;
+    line-height: 18pt; 
+    /* padding-top: 1mm; */
+    padding-top: 0mm;
+    padding-left: 0mm;
+    /* padding-bottom: 1mm; */
+    padding-bottom: 0mm;
+    padding-right: 0mm;	
+}
+
+
+/***************************************************************************************************
+* Organization Header / Logo (Section Master Page)
+****************************************************************************************************/
+
+.coverpage-section-info-container{
+    padding-top: 4mm;
+    padding-left: 0mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;
+}  
+
+.coverpage-section-info-number-container{
+    padding-top: 2mm;
+    padding-left: 3mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;
+    background-repeat:no-repeat;
+    vertical-align: middle;
+}  
+
+.coverpage-section-info-number{
+    font-family: "Ubuntu Light";
+    font-size: 20pt;	
+    font-weight: normal;
+    padding-top: 0mm;
+    padding-left: 0mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm; 
+    text-align: left;		
+} 
+
+.coverpage-section-info-name-container{
+    padding-top: 2mm;
+    padding-left: 4mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;   
+    vertical-align: middle;		
+} 
+
+.coverpage-section-info-name{
+    font-family: "Ubuntu Bold";
+    font-size: 20pt;	
+    font-weight: normal;   
+    color:#B21753;  /* on the mockup #B70057; */
+    text-align: left;
+} 
+
+.coverpage-section-organization-logo-image {
+    /* Basic styles */        
+    width: 20mm; /* image width */  
+    /* Additional styles */
+    /* proportional-scale: true; */  /* If true, image height will be automatically proportional to width */
+    /* height: 21mm; */ /* Image height. Note: Not required if proportional-scale is true */
+    
+}
+
+.coverpage-section-client-info-container{
+    padding-top: 0mm;
+    padding-left: 0mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;
+} 
+
+.coverpage-section-client-info-line{
+	height: 5mm;
+}
+
+
+.coverpage-section-client-info-strong{
+    font-family: "Ubuntu Bold";
+    font-size: 9pt;	
+    font-weight: normal;   
+    text-align: right;
+    /* color:#222222; default color Evooq black */
+} 
+
+.coverpage-section-client-info-light{
+    font-family: "Ubuntu Light";
+    font-size: 9pt;	
+    font-weight: normal;   
+    text-align: right;
+    /* color:#222222; default color Evooq black */
+} 
+         
+            
+.report-organization-header-image {
+    /* Note: There is no "Style" dropdown selector in BIRT Designer for the Master Page.
+    To apply a style to a Master Page in BIRT Designer, right-mouse click the Master Page,
+    then, in the Master Page design area, select "Style", then "Apply Style" and select a style to apply. 
+    Thereon, the applied style can easily be edited directly in the xml */
+    
+    /* Basic styles */
+    
+    /* Additional styles */
+    
+    /* background-size-height: auto; */ /* height of header image (auto | contain | cover | Xmm | X%) */ 
+    /* background-size-width: auto; */ /* width of header image (auto | contain | cover | Xmm | X%) */
+    /* background-position-X: center; */ /* width of header image (center | left | right | Xmm) */
+    
+    padding-top: 0mm;
+    padding-left: 0mm;
+    padding-bottom: 0mm;
+    padding-right: 0mm;
+}
+            
+.report-organization-logo-container {
+    /* Basic styles */ 
+    height: 50mm; /* height of container in which the image is placed */
+    text-align: center; /* horizontal alignment of logo image within its container */
+    vertical-align: middle; /* vertical alignment of logo image within its container */
+    
+    /* Additional styles */
+    padding-top: 0mm; /* top padding of logo image within its container */
+    padding-left: 0mm; /* left padding of logo image within its container */
+    padding-bottom: 0mm; /* bottom padding of logo image within its container */
+    padding-right: 0mm; /* right padding of logo image within its container */
+}
+
+
+/***************************************************************************************************
+* Macro Outlook section
+****************************************************************************************************/
+
+.report-macrooutlook-grid{
+	/* Settings for background image */
+	/* background-positionX: right; */
+	/* background-positionY: 0%; */
+	background-repeat: no-repeat;
+	padding-left: 3mm;
+	
+}
+
+.report-macrooutlook-subtitle-container{
+    padding-top: 2mm; 
+    padding-left: 0mm; 
+    padding-bottom: 2mm; 
+    padding-right: 0mm; 
+}
+
+.report-macrooutlook-subtitle{
+    padding-top: 0mm; 
+    padding-left: 0mm; 
+    padding-bottom: 1mm; 
+    padding-right: 0mm; 
+    
+    font-family: "Ubuntu Bold";
+    font-size: 9pt;	
+    font-weight: normal;   
+    text-align: left;
+    color: #B21753; 
+    border-bottom-color: #999999;
+    border-bottom-style: solid;
+    border-bottom-width:0.5pt;
+}
+
+.report-macrooutlook-content-container{
+    padding-top: 0mm; 
+    padding-left: 0mm; 
+    padding-bottom: 2mm; 
+    padding-right: 0mm; 
+}
+
+.report-macrooutlook-content-strong{
+    font-family: "Ubuntu";
+    font-size: 9pt;	
+    font-weight: bold;
+    line-height: 12pt;   
+
+    padding-top: 0mm; 
+    padding-left: 0mm; 
+    padding-bottom: 1mm; 
+    padding-right: 0mm;  
+}
+
+.report-macrooutlook-content-light{
+    font-family: "Ubuntu Light";
+    font-size: 9pt;	
+    font-weight: normal;
+    line-height: 12pt;     
+}
+
+/***************************************************************************************************
+* Overview section
+****************************************************************************************************/
+
+.report-overview-grid{
+    margin-left: 3mm;
+}
+
+/* single style for all subtitles */
+.report-overview-subtile-row{
+	border-bottom-color: #919191;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-overview-portfolio-title-row{
+	border-bottom-color: #919191;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-overview-title-cell{
+	padding-top: 1mm; 
+    padding-left: 0mm; 
+    padding-bottom: 1mm; 
+    padding-right: 0mm; 
+}
+
+.report-overview-portfolio-title{
+	font-family: "Ubuntu Bold";
+	font-size: 9pt;
+	font-weight: normal;
+	color: #B21753;
+}
+
+.report-overview-currentproposal-title-row{
+	border-bottom-color: #919191;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-overview-currentproposal-title{
+	font-family: "Ubuntu Bold";
+	font-size: 9pt;
+	font-weight: normal;
+	color: #222222;
+}
+
+.report-overview-investobjective-title{
+	font-family: "Ubuntu bold";
+	font-size: 9pt;
+	font-weight: normal;
+	color: #B21753;
+}
+
+.report-overview-portfolio-grid{
+
+}
+
+.report-overview-currentproposal-grid{
+
+}
+
+.report-overview-investobjective-grid{
+
+}
+
+.report-overview-portfolio-item-grid{
+	margin-top: 6mm;
+	margin-bottom: 4mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+	
+}
+
+.report-overview-portfolio-item-image-row{
+	height: 12mm;
+	text-align: center;
+}
+
+.report-overview-item-text-row{
+	height: 4mm;
+}
+
+.report-overview-item-title{
+	font-family: "Ubuntu Light";
+	font-size: 9pt;
+	text-align: center;
+	line-height: 12pt;
+}
+
+.report-overview-item-value{
+	font-family: "Ubuntu Bold";
+	font-size: 9pt;
+	font-weight: normal;
+	text-align: center;
+	line-height: 12pt;
+	color: #B21753;
+}
+
+.report-overview-mandate-item-grid{
+	margin-top: 6mm;
+	margin-bottom: 4mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+	
+}
+
+.report-overview-mandate-item-image-row{
+	height: 12mm;
+	text-align: center;
+}
+
+
+.report-overview-investprofile-item-grid{
+	margin-top: 0mm;
+	margin-bottom: 0mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+	
+}
+
+.report-overview-investprofile-item-image-row{
+	height: 12mm;
+	text-align: center;
+}
+
+.report-overview-dotlevel-container-row{
+	height: 4mm;
+	text-align: center;
+}
+
+.report-overview-dotlevel-container-grid{
+	width: 12mm;
+	text-align: center;
+}
+
+.report-overview-investstrat-item-grid{
+	margin-top: 0mm;
+	margin-bottom: 0mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+	
+}
+.report-overview-investstrat-item-image-row{
+	height: 12mm;
+	text-align: center;
+}
+
+.report-overview-marketvalue-item-grid{
+	margin-top: 0mm;
+	margin-bottom: 0mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+	
+}
+
+.report-overview-marketvalue-item-image-row{
+	height: 12mm;
+	text-align: center;
+}
+
+
+.report-overview-perf-item-grid{
+	margin-top: 0mm;
+	margin-bottom: 0mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+	
+}
+
+.report-overview-perf-item-image-row{
+	height: 12mm;
+	text-align: center;
+}
+
+.report-overview-currentproposal-risk-row{
+	height: 8mm;
+	vertical-align: middle;
+}
+
+.report-overview-currentproposal-suitability-row{
+	height: 8mm;
+	vertical-align: middle;
+}
+
+.report-overview-currentproposal-healthcheck-row{
+	height: 8mm;
+	vertical-align: middle;
+}
+
+.report-overview-currentproposal-sellrecommand-row{
+	height: 8mm;
+	vertical-align: middle;
+}
+
+.report-overview-currentproposal-current-icon-cell{
+	text-align: left;
+}
+
+.report-overview-currentproposal-proposal-icon-cell{
+	text-align: right;
+}
+
+.report-overview-currentproposal-text-cell{
+	/* background-position-x: center; */
+	/* background-position-y: center; */
+	background-repeat: no-repeat;
+}
+
+.report-overview-currentproposal-text{
+	font-family: "Ubuntu Light";
+	font-size: 9pt;
+	text-align: center;
+}
+
+.report-overview-currentproposal-risk-text-cell{
+	/* background-position-x: center; */
+	/* background-position-y: top; */
+	background-repeat: no-repeat;
+}
+
+.report-overview-currentproposal-buy-sell-grid{
+	margin-top: 7mm;
+	margin-bottom: 7mm;
+	margin-left: 0mm;
+	margin-right: 0mm;
+}
+
+.report-overview-currentproposal-fees-image-row{
+	height: 12mm;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+
+.report-overview-underligned-title-cell{
+	padding-top: 0mm; 
+    padding-left: 0mm; 
+    padding-bottom: 2mm; 
+    padding-right: 0mm; 
+	border-bottom-color: #919191;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-overview-investobjective-text{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+	line-height: 12pt;
+}
+
+.report-overview-investobj-column{
+ 	background-color: #f4f4f4;
+}
+
+.report-overview-investproposal-goal-title{
+	font-family: "Ubuntu Bold";
+	font-size: 9pt;
+	font-weight: normal;
+	color: #B21753;
+}
+
+.report-overview-investproposal-goal-item-image-cell{
+	text-align: left;
+	
+}
+
+.report-overview-investproposal-goal-item-text-cell{
+		
+}
+
+.report-overview-investproposal-goal-item-text{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	line-height: 12pt;
+	text-align: left;
+}
+
+
+
+/***************************************************************************************************
+* Portfolio analysis section
+****************************************************************************************************/
+
+/* single style for all subtitles */
+.report-portfolioanalysis-subtile-row{
+	border-bottom-color: #919191;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-portfolioanalysis-chart-title{
+	font-family: "Ubuntu Light";
+	font-size: 12pt;
+	color: #B21753;
+	text-align: left;
+}
+
+.report-portfolioanalysis-chart-container-column{
+	width: 130mm;
+}
+
+.report-portfolioanalysis-chart-top-vertical-spacer{
+	width: 5mm;
+}
+
+.report-portfolioanalysis-legend{
+	font-family: "Ubuntu Light";
+	font-size: 6pt;
+	text-align: left;
+}
+
+.report-portfolioanalysis-minbound-legend{
+	font-family: "Ubuntu Bold";
+	font-size: 5pt;
+	font-weight: normal;
+	color: #0081C9;
+	text-transform: uppercase;
+}
+
+.report-portfolioanalysis-maxbound-legend{
+	font-family: "Ubuntu Bold";
+	font-size: 5pt;
+	font-weight: normal;
+	color: #E40613;
+	text-transform: uppercase;
+}
+
+
+/***************************************************************************************************
+* Suggested changes section
+****************************************************************************************************/
+
+.report-suggestedchanges-table-header-top-row{
+	height: 5mm;
+	background-color: #f4f4f4;
+}
+
+.report-suggestedchanges-table-header-bottom-row{
+	height: 5mm;
+	background-color: #f4f4f4;
+	border-bottom-color: #222222;
+    border-bottom-style: solid;
+    border-bottom-width: 1pt;	
+}
+
+.report-suggestedchanges-table-highlighted-header-cell{
+	background-color: #e9e9e9;
+	padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm; 
+}
+
+.report-suggestedchanges-table-header-label{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #B21753;
+}
+
+.report-suggestedchanges-table-header-currency{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+}
+
+.report-suggestedchanges-table-row{
+	height: 8mm;
+}
+
+.report-suggestedchanges-table-row-data{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+}
+
+.report-suggestedchanges-buysell-icon-table-cell{
+    padding-top: 2.5mm;
+    padding-left: 2mm;
+    padding-bottom: 2mm;
+    padding-right: 2mm;
+    vertical-align: middle;
+}
+
+.report-suggestedchanges-table-row-data-strong{
+	font-family: "Ubuntu Medium";
+	font-size: 8pt;
+}
+
+
+.report-suggestedchanges-table-highlighted-data-cell{
+	background-color: #f4f4f4;
+	padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm; 
+}
+
+.report-suggestedchanges-table-highlighted-column{
+	background-color: #f4f4f4;
+}
+
+.report-suggestedchanges-table-bottom-row{
+	height: 2mm;
+	border-bottom-color: #f4f4f4;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5pt;
+}
+
+
+/***************************************************************************************************
+* Investment Suitability section
+****************************************************************************************************/
+ 
+  .report-investsuitability-bottom-border-lined-container{
+	border-bottom-color: #222222;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;  
+  }
+  
+  
+ .report-investsuitability-riskgrade-subtitle-row{
+	background-color: #525252;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #222222;
+}
+
+.report-investsuitability-riskgrade-subtitle-cell{
+    padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm; 
+}
+ 
+ .report-investsuitability-riskgrade-subtitle{
+    font-family: "Ubuntu Bold";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+ }
+ 
+ .report-investsuitability-left-column{
+	width: 8mm;
+	text-align: center;
+}
+
+ .report-investsuitability-riskgrade-dotlevel-column{
+	width: 16mm;
+	text-align: center;
+}
+
+
+.report-investsuitability-riskgrade-dotlevel-container-grid{
+	width: 12mm;
+	text-align: center;
+}
+
+.report-investsuitability-riskgrade-row-data{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+}
+
+.report-investsuitability-riskgrade-row-data-strong{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+.report-investsuitability-comment-cell{
+	background-color: #f4f4f4;
+	padding-left: 2mm;
+	vertical-align: middle;
+	
+}
+
+.report-investsuitability-comment{
+	font-family: "Ubuntu";
+	font-size: 7pt;
+	font-style: italic;
+	
+}
+
+ 
+.report-investsuitability-bankconstraints-subtitle-row{
+	background-color: #9B0155;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #222222;
+}
+
+.report-investsuitability-bankconstraints-subtitle-cell{
+    padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm; 
+}
+
+.report-investsuitability-bankconstraints-subtitle{
+    font-family: "Ubuntu Bold";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+ .report-investsuitability-status{
+    font-family: "Ubuntu Light";
+    font-size: 8pt;
+}
+
+ .report-investsuitability-table-container-column{
+	width: 116mm;
+}
+
+ .report-investsuitability-table-cell{
+    border-bottom-color: #999999;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5pt;
+    padding-top: 2mm;
+    padding-left: 2mm;
+    padding-bottom: 2mm;
+    padding-right: 2mm;
+    vertical-align: middle; 
+}
+
+ 
+.report-investsuitability-clientconstraints-subtitle-row{
+	background-color: #858585;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #222222;
+}
+
+.report-investsuitability-clientconstraints-subtitle-cell{
+    padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm; 
+}
+
+.report-investsuitability-clientconstraints-subtitle{
+    font-family: "Ubuntu Bold";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
+.report-investsuitability-constraint-type-ok{
+    font-family: "Ubuntu Bold";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #5EA343;
+    text-align: right;
+}
+
+.report-investsuitability-constraint-type-notok{
+    font-family: "Ubuntu Bold";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #C20E19;
+    text-align: right;
+}
+
+.report-investsuitability-constraint-name{
+    font-family: "Ubuntu Light";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #222222;
+    text-align: left;
+}
+ 
+.report-investsuitability-kne-subtitle-row{
+	background-color: #EBEBEB;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #222222;
+}
+
+.report-investsuitability-kne-subtitle-cell{
+	    padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm; 
+}
+
+.report-investsuitability-kne-subtitle{
+    font-family: "Ubuntu Bold";
+    font-size: 8pt;
+    font-weight: normal;
+    color: #9B0155;
+    text-align: left;
+}
+
+/***************************************************************************************************
+* Proposed portfolio Section
+****************************************************************************************************/
+
+.report-proposedportfolio-table-header-top-row{
+	height: 5mm;
+	background-color: #f4f4f4;
+}
+
+.report-proposedportfolio-table-header-bottom-row{
+	height: 5mm;
+	background-color: #f4f4f4;
+	border-bottom-color: #222222;
+    border-bottom-style: solid;
+    border-bottom-width: 1pt;	
+}
+
+.report-proposedportfolio-table-header-label{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #B21753;
+}
+
+.report-proposedportfolio-table-header-highlighted-cell{
+	background-color:#E9E9E9;
+	padding-top: 2mm; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm;
+	vertical-align: middle;	
+}
+
+.report-proposedportfolio-table-header-currency-label{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #222222;
+}
+
+.report-proposedportfolio-table-highlighted-column{
+	width: 20mm;
+	background-color: #EBEBEB;
+}
+
+.report-proposedportfolio-table-row{
+	height: 5mm;
+}
+
+.report-proposedportfolio-table-cell{
+	padding-top: 2pt; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm;
+	vertical-align: middle;	
+}
+
+.report-proposedportfolio-table-highlighted-cell{
+	background-color:#F4F4F4;
+	padding-top: 2pt; 
+    padding-left: 2mm; 
+    padding-bottom: 2mm; 
+    padding-right: 2mm;
+	vertical-align: middle;	
+}
+
+.report-proposedportfolio-table-row-data{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+}
+
+.report-proposedportfolio-table-row-data-strong{
+	font-family: "Ubuntu Medium";
+	font-size: 8pt;
+}
+
+.report-proposedportfolio-outsideofuniverse-infos-title{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #B21753;
+	line-height: 12pt;
+}
+
+.report-proposedportfolio-outsideofuniverse-infos-text{
+	font-family: "Ubuntu";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #222222;
+	line-height: 12pt;
+	text-align: justify;
+}
+
+.report-proposedportfolio-table-taxonomygroup-header-row{
+	height: 5mm;
+	background-color: #E9E9E9;
+}
+
+.report-proposedportfolio-table-taxonomygroup-header-bottom-row{
+	height: 1mm;
+}
+
+.report-proposedportfolio-table-taxonomygroup-footer-row{
+	height: 2mm;
+	border-bottom-color: #999999;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5pt;
+}
+
+.report-proposedportfolio-table-taxonomygroup-header-label{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #B21753;
+}
+
+.report-proposedportfolio-table-taxonomygroup-data{
+	font-family: "Ubuntu Bold";
+	font-weight: normal;
+	font-size: 8pt;
+	text-align: right;
+}
+
+.report-proposedportfolio-table-taxonomygroup-header-cell{
+	padding-top: 3pt; 
+    padding-left: 2mm; 
+    padding-bottom: 1mm; 
+    padding-right: 2mm;
+	vertical-align: middle;	
+}
+
+.report-proposedportfolio-table-taxonomygroup-header-highlighted-cell{
+	padding-top: 3pt; 
+    padding-left: 2mm; 
+    padding-bottom: 1mm; 
+    padding-right: 2mm;
+	vertical-align: middle;	
+	background-color: #DEDEDE;
+}
+
+
+
+/***************************************************************************************************
+* Validation Section
+****************************************************************************************************/
+
+.report-validation-grid{
+	margin-left: 3mm;
+}
+
+.report-validation-box-background{
+	background-color: #F4F4F4;
+	margin-top: 2mm;
+}
+
+.report-validation-disclaimer-cell{
+	padding-top: 3mm;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 10mm;
+}
+
+	
+.report-validation-discaimer-text{
+	font-family: "Ubuntu Light";
+	font-size: 7pt;
+	color: #222222;
+	text-align: left;
+	line-height: 12pt;
+}
+
+/*
+.report-validation-discaimer-title{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	color: #B21753;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 5mm;
+	padding-right: 1pt;
+	text-align: left;
+	line-height: 12pt;
+}
+*/
+
+.report-validation-subtitle-row{
+	height: 5mm;	
+}
+
+.report-validation-subtitle-cell{
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+	text-align: left;
+}
+
+.report-validation-subtitle{
+	font-family: "Ubuntu Bold";
+	font-size: 8pt;
+	font-weight: normal;
+	line-height: 12pt;
+	color: #B21753;
+}
+
+.report-validation-leftpane-text{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+	font-weight: normal;
+	line-height: 12pt;
+	color: #222222;
+}
+
+.report-validation-leftpane-text-block-cell{
+	padding-top: 1pt;
+	padding-bottom: 4mm;
+	padding-left: 1pt;
+	padding-right: 30mm;
+}
+
+.report-validation-leftpane-text-block{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+	font-weight: normal;
+	line-height: 12pt;
+	color: #222222;
+	text-align: left;
+}
+
+.report-validation-line2-cell{
+	padding-top: 1pt;
+	padding-bottom: 4mm;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+.report-validation-line2{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+	font-weight: normal;
+	line-height: 12pt;
+	color: #B21753;
+}
+
+.report-validation-top-border-dotted-line{
+	font-family: "Ubuntu Light";
+	font-size: 8pt;
+	font-weight: normal;
+	line-height: 12pt;
+	color: #222222;
+	text-align: left;
+	padding-top: 2mm;
+	padding-left: 1pt;
+	padding-bottom: 1pt;
+	padding-right: 1pt;
+	border-top-color: #222222;
+    border-top-style: dotted;
+    border-top-width: 1pt;
+	
+}
+
+
+/***************************************************************************************************
+* Lexicon Section
+****************************************************************************************************/
+
+.report-lexicon-definition{
+	font-family: "Ubuntu Light";
+	font-size: 7pt;
+	font-weight: normal;
+	color: #222222;
+	line-height: 10pt;
+	text-align: left;
+}
+
+.report-lexicon-row{
+	margin-bottom: 3mm;
+}
+
+.report-lexicon-word{
+	font-family: "Ubuntu Light";
+	font-size: 7pt;
+	font-weight: bold;
+	color: #B21753<;
+	line-height: 10pt;
+	text-align: left;
+}
+
+

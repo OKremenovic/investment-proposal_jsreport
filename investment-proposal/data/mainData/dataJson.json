@@ -1,0 +1,721 @@
+{
+    "user": {
+      "organizationId": "",
+      "id": "",
+      "username": ""
+    },
+    "code": {
+      "type": "",
+      "value": ""
+    },
+    "client": {
+      "individualId": "",
+      "individualFullName": "Asterix Bordenca",
+      "clientRelationshipId": "",
+      "riskProfile": "",
+      "referenceCurrency": "",
+      "Locale language": "",
+      "managerName": "",
+      "advisorName": "",
+      "regulatoryClassification": "",
+      "isProspect": "",
+      "aggregatedPortfoliosRiskGrades": {
+        "before": "",
+        "after": ""
+      }
+    },
+    "portfolio": {
+      "id": "",
+      "name": 1112,
+      "mandate": "Silver",
+      "strategyProfileId": "",
+      "strategyProfile": 5,
+      "strategyProfileName": "CHF - Balanced - Gold",
+      "strategyProfileDescription": "",
+      "currency": "CHF",
+      "marketValue": 1539542.72,
+      "netFortune": "",
+      "riskGrade": 5,
+      "isSuitable": true,
+      "healthCheck": false,
+      "constraints": {
+        "bankBreachedConstraints": [],
+        "clientBreachedConstraints": []
+      },
+      "historicalVolatility": "",
+      "historicalReturn": "",
+      "ytw": "",
+      "duration": "",
+      "sellRecommendations": 0,
+      "overallPerformance": {
+        "percentage": "%",
+        "returnType": "",
+        "amount": "",
+        "currency": "",
+        "timeFrame": 3.60
+      },
+      "advisor": {
+        "userName": "",
+        "fullName": "Beaumont Sebastien",
+        "phoneNumber": "",
+        "email": "",
+        "office": {
+          "name": "",
+          "street": "",
+          "zip": "",
+          "city": "",
+          "country": ""
+        }
+      },
+      "positions": [
+        {
+          "sourceId": "",
+          "asset": "",
+          "assetPriceInPositionCurrency": {
+            "value": "",
+            "currency": "",
+            "type": ""
+          },
+          "purchaseCost": "",
+          "purchaseCurrency": "",
+          "performanceAmount": "",
+          "performanceCurrency": "",
+          "performancePercentage": "",
+          "quantity": "",
+          "weight": "",
+          "marketValue": "",
+          "riskContribution": "",
+          "ytm": "",
+          "ytc": "",
+          "ytw": "",
+          "duration": "",
+          "status": "",
+          "groups": [
+            {
+              "taxonomyId": "",
+              "reportSection": "",
+              "key": "",
+              "label": "",
+              "rank": "",
+              "level": ""
+            }
+          ],
+          "recommendations": [
+            {
+              "level": "",
+              "provider": "",
+              "type": "",
+              "rationale": ""
+            }
+          ],
+          "assetMetrics": [
+            {
+              "key": "",
+              "name": "",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "liabilities": [
+        {
+          "label": "",
+          "nominalAmount": "",
+          "nominalCurrency": "",
+          "marketValue": "",
+          "dueDate": "",
+          "interestRate": ""
+        }
+      ],
+      "performances": [
+        {
+          "percentage": "",
+          "returnType": "",
+          "amount": "",
+          "currency": "",
+          "timeFrame": ""
+        }
+      ],
+      "fxRates": [
+        {
+          "fromCurrency": "",
+          "toCurrency": "",
+          "rate": ""
+        }
+      ],
+      "taxons": [
+        {
+          "taxonId": "",
+          "taxonName": "",
+          "order": "",
+          "taxonomy": {
+            "taxonomyId": "",
+            "taxonomyName": "",
+            "order": ""
+          }
+        }
+      ]
+    },
+    "proposal": {
+      "id": "",
+      "sharedId": "",
+      "status": "",
+      "generatedAt": "July 14, 2020",
+      "createdBy": "",
+      "lastModifiedBy": "",
+      "lastModifiedAt": "",
+      "clonedFromProposalId": "",
+      "name": "Report business rule - Proposal name",
+      "mandate": "",
+      "strategyProfile": "",
+      "strategyProfileName": "",
+      "strategyProfileDescription": "",
+      "netFortune": "",
+      "marketValue": "",
+      "marketValueCurrency": "",
+      "comment": "",
+      "riskGrade": 3,
+      "isSuitable": true,
+      "healthCheck": false,
+      "orders": [
+        {
+          "id": "",
+          "lastModifiedAt": "",
+          "asset": {
+            "id": "",
+            "isin": "",
+            "valoren": "",
+            "name": "",
+            "rationale": "",
+            "multipleLinesName": "",
+            "currency": "",
+            "mainTradingCurrency": "",
+            "transactionTaxonName": "",
+            "transactionTaxonId": "",
+            "assetTypeTaxonName": "",
+            "assetTypeTaxonId": "",
+            "universeBelongingStatus": ""
+          },
+          "transactionType": "buy",
+          "quantity": "",
+          "amount": 786447.00,
+          "weight": "",
+          "marketValue": "",
+          "kne": "",
+          "cashCurrencyUsed": "",
+          "assetPriceInCashCurrency": "",
+          "initiatedBy": "",
+          "fees": {
+            "internalFees": "",
+            "externalFees": "",
+            "totalFees": ""
+          },
+          "authorizedAssetBreaches": "",
+          "amountInAssetCurrency": "",
+          "orderType": "",
+          "limitPrice": "",
+          "triggerPrice": "",
+          "validityDate": ""
+        }
+      ],
+      "depositsAndWithdrawals": [
+        {
+          "cashCurrency": "",
+          "transactionType": "",
+          "quantity": "",
+          "amount": "",
+          "weight": "",
+          "marketValue": "",
+          "kne": "",
+          "fxRate": "",
+          "initiatedBy": ""
+        }
+      ],
+      "currencyConversionOrders": [
+        {
+          "id": "",
+          "lastModifiedAt": "",
+          "transactionType": "",
+          "quantity": "",
+          "weight": "",
+          "marketValue": "",
+          "kne": "",
+          "cashCurrency": "",
+          "cashCurrencyUsed": "",
+          "fxRate": "",
+          "fees": {
+            "internalFees": "",
+            "externalFees": "",
+            "totalFees": ""
+          },
+          "initiatedBy": ""
+        }
+      ],
+      "constraints": {
+        "bankBreachedConstraints": "",
+        "clientBreachedConstraints": ""
+      },
+      "kne": "",
+      "proposalGoals": [],
+      "historicalVolatility": "",
+      "historicalReturn": "",
+      "ytw": "",
+      "duration": "",
+      "positions": [
+      {
+          "sourceId": "12345",
+          "asset": {
+              "id": "7890",
+              "isin": "US1234567890",
+              "valoren": "VAL123",
+              "name": "Sample Asset",
+              "rationale": "Investment opportunity",
+              "multipleLinesName": "Sample Asset\nLine 2",
+              "currency": "USD",
+              "mainTradingCurrency": "USD",
+              "transactionTaxonName": "Equity",
+              "transactionTaxonId": "TAXON123",
+              "assetTypeTaxonName": "Stock",
+              "assetTypeTaxonId": "ASSET123",
+              "universeBelongingStatus": "Public"
+          },
+          "assetPriceInPositionCurrency": {
+              "value": 100.00,
+              "currency": "USD",
+              "type": "Market Price"
+          },
+          "purchaseCost": 95.00,
+          "purchaseCurrency": "USD",
+          "performanceAmount": 10.00,
+          "performanceCurrency": "USD",
+          "performancePercentage": 10.00,
+          "quantity": 100,
+          "weight": 0.1,
+          "marketValue": 1000.00,
+          "riskContribution": 5.00,
+          "ytm": 3.50,
+          "ytc": 4.00,
+          "ytw": 3.75,
+          "duration": 4.25,
+          "status": "updated",
+          "groups": [
+              {
+                "taxonomyId": "TAXONOMY123",
+                "reportSection": "Section A",
+                "key": "Group A",
+                "label": "Group Label",
+                "rank": 1,
+                "level": "Level 1"
+              }
+          ],
+          "recommendations": [
+            {
+              "level": "High",
+              "provider": "Analyst A",
+              "type": "Buy",
+              "rationale": "Strong growth potential"
+            }
+          ],
+          "assetMetrics": [
+            {
+              "key": "Metric A",
+              "name": "Metric Name A",
+              "value": 8.75
+            },
+            {
+              "key": "Metric B",
+              "name": "Metric Name B",
+              "value": 12.50
+            }
+          ]
+        },
+        {
+          "sourceId": "54321",
+          "asset": {
+            "id": "9876",
+            "isin": "US9876543210",
+            "valoren": "VAL987",
+            "name": "New Asset",
+            "rationale": "Promising investment",
+            "multipleLinesName": "New Asset\nDescription",
+            "currency": "EUR",
+            "mainTradingCurrency": "EUR",
+            "transactionTaxonName": "Fixed Income",
+            "transactionTaxonId": "TAXON987",
+            "assetTypeTaxonName": "Bond",
+            "assetTypeTaxonId": "ASSET987",
+            "universeBelongingStatus": "Private"
+          },
+          "assetPriceInPositionCurrency": {
+            "value": 120.00,
+            "currency": "EUR",
+            "type": "Spot Price"
+          },
+          "purchaseCost": 110.00,
+          "purchaseCurrency": "EUR",
+          "performanceAmount": 8.50,
+          "performanceCurrency": "EUR",
+          "performancePercentage": 8.50,
+          "quantity": 70125,
+          "weight": 0.075,
+          "marketValue": 900.00,
+          "riskContribution": 4.50,
+          "ytm": 2.75,
+          "ytc": 3.25,
+          "ytw": 3.00,
+          "duration": 5.00,
+          "status": "sold",
+          "groups": [
+            {
+              "taxonomyId": "TAXONOMY987",
+              "reportSection": "Section B",
+              "key": "Group B",
+              "label": "New Group",
+              "rank": 2,
+              "level": "Level 2"
+            }
+          ],
+          "recommendations": [
+            {
+              "level": "Moderate",
+              "provider": "Analyst B",
+              "type": "Hold",
+              "rationale": "Stable performance"
+            }
+          ],
+          "assetMetrics": [
+            {
+              "key": "Metric C",
+              "name": "Metric Name C",
+              "value": 9.25
+            },
+            {
+              "key": "Metric D",
+              "name": "Metric Name D",
+              "value": 14.00
+            }
+          ]
+        },
+        {
+          "sourceId": "54321",
+          "asset": {
+            "id": "9876",
+            "isin": "US9876543210",
+            "valoren": "VAL987",
+            "name": "New Asset",
+            "rationale": "Promising investment",
+            "multipleLinesName": "New Asset\nDescription",
+            "currency": "EUR",
+            "mainTradingCurrency": "EUR",
+            "transactionTaxonName": "Fixed Income",
+            "transactionTaxonId": "TAXON987",
+            "assetTypeTaxonName": "Bond",
+            "assetTypeTaxonId": "ASSET987",
+            "universeBelongingStatus": "Private"
+          },
+          "assetPriceInPositionCurrency": {
+            "value": 130.00,
+            "currency": "EUR",
+            "type": "Market Price"
+          },
+          "purchaseCost": 120.00,
+          "purchaseCurrency": "EUR",
+          "performanceAmount": 9.50,
+          "performanceCurrency": "EUR",
+          "performancePercentage": 9.50,
+          "quantity": 75000,
+          "weight": 0.075,
+          "marketValue": 975.00,
+          "riskContribution": 4.75,
+          "ytm": 3.00,
+          "ytc": 3.50,
+          "ytw": 3.25,
+          "duration": 5.50,
+          "status": "sold",
+          "groups": [
+            {
+              "taxonomyId": "TAXONOMY987",
+              "reportSection": "Section B",
+              "key": "Group B",
+              "label": "New Group",
+              "rank": 2,
+              "level": "Level 2"
+            }
+          ],
+          "recommendations": [
+            {
+              "level": "Moderate",
+              "provider": "Analyst B",
+              "type": "Hold",
+              "rationale": "Stable performance"
+            }
+          ],
+          "assetMetrics": [
+            {
+              "key": "Metric C",
+              "name": "Metric Name C",
+              "value": 9.75
+            },
+            {
+              "key": "Metric D",
+              "name": "Metric Name D",
+              "value": 14.50
+            }
+          ]
+        },
+        {
+            "sourceId": "98765",
+            "asset": {
+              "id": "1234",
+              "isin": "US1234123412",
+              "valoren": "VAL1234",
+              "name": "Cosmic Energy Crystal",
+              "rationale": "Unearthly Power Source",
+              "multipleLinesName": "Cosmic Energy Crystal\nUnlocking Mysteries of the Universe",
+              "currency": "XEN",
+              "mainTradingCurrency": "XEN",
+              "transactionTaxonName": "Exotic Matter",
+              "transactionTaxonId": "XENTAXON",
+              "assetTypeTaxonName": "Cosmic Relic",
+              "assetTypeTaxonId": "COSMIC123",
+              "universeBelongingStatus": "Unknown"
+            },
+            "assetPriceInPositionCurrency": {
+              "value": 999.99,
+              "currency": "XEN",
+              "type": "Transcendental Price"
+            },
+            "purchaseCost": 500.00,
+            "purchaseCurrency": "XEN",
+            "performanceAmount": 499.99,
+            "performanceCurrency": "XEN",
+            "performancePercentage": 99.99,
+            "quantity": 1,
+            "weight": 0.01,
+            "marketValue": 999.99,
+            "riskContribution": 0.01,
+            "ytm": 0.00,
+            "ytc": 0.00,
+            "ytw": 0.00,
+            "duration": "Eternal",
+            "status": "new",
+            "groups": [
+              {
+                "taxonomyId": "XENTAXONOMY",
+                "reportSection": "Universe Section",
+                "key": "Cosmic Group",
+                "label": "Celestial Guardians",
+                "rank": "Supreme",
+                "level": "Cosmic Entity"
+              }
+            ],
+            "recommendations": [
+              {
+                "level": "Transcendent",
+                "provider": "Cosmic Analyst Omega",
+                "type": "Hold the Power",
+                "rationale": "Unlocking Infinite Potential"
+              }
+            ],
+            "assetMetrics": [
+              {
+                "key": "Cosmic Metric A",
+                "name": "Cosmic Energy Level",
+                "value": "Infinity"
+              },
+              {
+                "key": "Cosmic Metric B",
+                "name": "Interdimensional Nexus",
+                "value": "Bridging Realms"
+              }
+            ]
+          },
+
+        {
+          "sourceId": "76543",
+          "asset": {
+            "id": "5432",
+            "isin": "US5432109876",
+            "valoren": "VAL9876",
+            "name": "Innovative Tech Stock",
+            "rationale": "Next Big Thing in Tech",
+            "multipleLinesName": "Innovative Tech Stock\nRevolutionary Technology",
+            "currency": "USD",
+            "mainTradingCurrency": "USD",
+            "transactionTaxonName": "Equity",
+            "transactionTaxonId": "TAXON5432",
+            "assetTypeTaxonName": "Tech Stock",
+            "assetTypeTaxonId": "ASSET5432",
+            "universeBelongingStatus": "Exclusive"
+          },
+          "assetPriceInPositionCurrency": {
+              "value": 150.00,
+              "currency": "USD",
+              "type": "Latest Market Price"
+            },
+            "purchaseCost": 145.00,
+            "purchaseCurrency": "USD",
+            "performanceAmount": 12.00,
+            "performanceCurrency": "USD",
+            "performancePercentage": 12.00,
+            "quantity": 5000,
+            "weight": 5.00,
+            "marketValue": 750000.00,
+            "riskContribution": 7.50,
+            "ytm": 3.00,
+            "ytc": 4.00,
+            "ytw": 3.50,
+            "duration": 4.50,
+            "status": "sold",
+            "groups": [
+              {
+                "taxonomyId": "TAXONOMY5432",
+                "reportSection": "Tech Section",
+                "key": "Tech Group",
+                "label": "Innovators",
+                "rank": 1,
+                "level": "Pioneers"
+              }
+            ],
+            "recommendations": [
+              {
+                "level": "Exceptional",
+                "provider": "Tech Analyst X",
+                "type": "Buy with Conviction",
+                "rationale": "Revolutionary Breakthrough"
+              }
+            ],
+            "assetMetrics": [
+              {
+                "key": "Tech Metric A",
+                "name": "Tech Innovation Score",
+                "value": 9.85
+              },
+              {
+                "key": "Tech Metric B",
+                "name": "Market Disruption Index",
+                "value": 13.75
+              }
+            ]
+          }
+      ],
+      "sellRecommendations": 0,
+      "totalFees": {
+        "internalFees": {
+          "currency": "CHF",
+          "value": 11846.25
+        },
+        "externalFees": {
+          "currency": "CHF",
+          "value": 0.15
+        }
+      },
+      "fxRates": [
+        {
+          "fromCurrency": "",
+          "toCurrency": "",
+          "rate": ""
+        }
+      ]
+    },
+    "allocations": [
+      {
+        "rank": "",
+        "taxonomyId": 93,
+        "taxonomyName": "",
+        "taxon": [
+          {
+            "rank": "",
+            "taxonId": "",
+            "taxonName": "",
+            "before": "",
+            "after": "",
+            "target": "",
+            "lowerBound": "",
+            "upperBound": ""
+          }
+        ]
+      }
+    ],
+    "riskContributions": [
+      {
+        "rank": "",
+        "taxonomyId": "",
+        "taxonomyName": "",
+        "taxons": [
+          {
+            "rank": "",
+            "taxonId": "",
+            "taxonName": "",
+            "before": "",
+            "after": ""
+          }
+        ]
+      }
+    ],
+    "stressTests": [
+      {
+        "id": "",
+        "name": "",
+        "description": "",
+        "startDate": "",
+        "endDate": "",
+        "before": "",
+        "after": ""
+      }
+    ],
+    "kpis": [
+      {
+        "id": "",
+        "before": "",
+        "after": ""
+      }
+    ],
+    "riskMetrics": [
+      {
+        "name": "",
+        "before": "",
+        "after": ""
+      }
+    ],
+    "constraintGroups": [
+      {
+        "id": "",
+        "name": "",
+        "justification": {
+          "text": "",
+          "scope": "",
+          "expiry": ""
+        },
+        "constraints": [
+          {
+            "id": "",
+            "type": "",
+            "name": "",
+            "modelValue": "",
+            "observedValueAfter": "",
+            "observedValueBefore": "",
+            "observedValueType": "",
+            "lowerBound": "",
+            "upperBound": "",
+            "hasKnowledge": "",
+            "hasExperience": "",
+            "validationMode": "",
+            "scope": "",
+            "respectedAfter": "",
+            "respectedBefore": "",
+            "assets": [
+              {
+                "id": "",
+                "isin": "",
+                "name": ""
+              }
+            ],
+            "categoryIds": [],
+            "groupingStrategy": "",
+            "justification": ""
+          }
+        ]
+      }
+    ]
+  }

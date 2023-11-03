@@ -1,0 +1,16 @@
+{
+    "investmentProposal": "Investment Proposal",
+    "client": "Client",
+    "portfolio": "Portfolio",
+    "proposal": "Proposal",
+    "date": "Date",
+    "yourAdvisor": "Your Advisor",
+    "assets": "Assets",
+    "ISIN": "ISIN",
+    "currency": "Currency",
+    "status": "Status",
+    "quantity": "Quantity",
+    "price": "Price",
+    "marketValue": "Market Value",
+    "weight": "Weight"
+}

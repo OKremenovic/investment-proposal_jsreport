@@ -1,0 +1,21 @@
+{
+    "name": "proposed-portfolio",
+    "engine": "handlebars",
+    "recipe": "html",
+    "data": null,
+    "shortid": "WnivzR9ur",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1698946074492
+    },
+    "modificationDate": {
+        "$$date": 1699017760498
+    },
+    "_id": "4j4EqiEMIe2KTNLJ",
+    "$entitySet": "templates",
+    "localization": {
+        "language": "en"
+    }
+}

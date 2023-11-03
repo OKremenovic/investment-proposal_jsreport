@@ -1,0 +1,25 @@
+{
+    "name": "cover",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "ftMySgGJh",
+    "chrome": {
+        "printBackground": true,
+        "width": "29.7cm",
+        "height": "21cm"
+    },
+    "creationDate": {
+        "$$date": 1698854851383
+    },
+    "modificationDate": {
+        "$$date": 1698944648633
+    },
+    "_id": "HOKhPjGN09M4hoYQ",
+    "$entitySet": "templates",
+    "localization": {
+        "language": "en"
+    },
+    "data": {
+        "shortid": "xOo8CoQnV"
+    }
+}
